@@ -1,0 +1,12 @@
+{
+	"pageID": "project",
+	"fileID": "project",
+	"category": "pt_content",
+	"title": "Grunt Template",
+	"description" : "Simple Grunt Template",
+	"keywords": "html, css, template, js",
+
+	"jquery": "js/lib/jquery-1.7.1.min.js",
+	"modernizr": "js/lib/modernizr-custom.js",
+	"html5shiv": "js/lib/html5shiv.min.js"
+}

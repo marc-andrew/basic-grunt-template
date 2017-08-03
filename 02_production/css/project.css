@@ -1,0 +1,321 @@
+/*****************************************************************
+ * Fonts
+ *****************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+/*****************************************************************
+ * CSS Resets
+ *****************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*****************************************************************
+ * Base Root styles
+ *****************************************************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  color: #2b2b2b;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+.nav-open body {
+  overflow: hidden;
+}
+
+.minicart-open body {
+  overflow: hidden;
+}
+
+/*****************************************************************
+ * Typography
+ *****************************************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a {
+  color: #222;
+}
+
+/*****************************************************************
+ * Form
+ *****************************************************************/
+label {
+  display: inline-block;
+  font-family: "Roboto", Verdana, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: #8a9097;
+  margin: 0 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="search"], input[type="email"], input[type="password"] {
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b;
+  width: 100%;
+  height: 35px;
+  padding: 4px 10px 5px;
+  box-shadow: 0 0 0 2px transparent;
+  -webkit-appearance: none;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="number"]:hover, input[type="number"]:focus, input[type="search"]:hover, input[type="search"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="password"]:hover, input[type="password"]:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #d4d4d4;
+}
+input[type="text"].invalid, input[type="email"].invalid, input[type="number"].invalid, input[type="search"].invalid, input[type="email"].invalid, input[type="password"].invalid {
+  border-color: #e50000;
+}
+input[type="text"].invalid:hover, input[type="text"].invalid:focus, input[type="email"].invalid:hover, input[type="email"].invalid:focus, input[type="number"].invalid:hover, input[type="number"].invalid:focus, input[type="search"].invalid:hover, input[type="search"].invalid:focus, input[type="email"].invalid:hover, input[type="email"].invalid:focus, input[type="password"].invalid:hover, input[type="password"].invalid:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #e50000;
+}
+input[type="text"]:disabled, input[type="email"]:disabled, input[type="number"]:disabled, input[type="search"]:disabled, input[type="email"]:disabled, input[type="password"]:disabled {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 0 2px transparent;
+}
+input[type="number"][type=number]::-webkit-inner-spin-button, input[type="number"][type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b;
+  width: 100%;
+  min-height: 60px;
+  padding: 5px 10px;
+  box-shadow: 0 0 0 2px transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+@media screen and (max-width: 667px) {
+  textarea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+textarea:hover, textarea:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #d4d4d4;
+}
+textarea:disabled {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 0 2px transparent;
+}
+
+select {
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  border-radius: 3px;
+  outline: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b;
+  width: 100%;
+  height: 35px;
+  padding: 1px 10px 0;
+  box-shadow: 0 0 0 2px transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+select:hover, select:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #d4d4d4;
+}
+select:disabled {
+  border-color: #e4e4e4;
+  box-shadow: 0 0 0 2px transparent;
+}
+
+/*****************************************************************
+ * Wrapper
+ *****************************************************************/
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/*****************************************************************
+ * header
+ *****************************************************************/
+#header {
+  background-color: #e4e4e4;
+  text-align: center;
+  height: 100px;
+  padding: 20px 0 0;
+}
+#header p {
+  font-size: 14px;
+  line-height: 18px;
+}
+#header strong {
+  font-weight: bold;
+}
+
+/*****************************************************************
+ * main
+ *****************************************************************/
+#main {
+  min-height: 400px;
+}
+
+/*****************************************************************
+ * header
+ *****************************************************************/
+#footer {
+  background-color: #e4e4e4;
+  height: 100px;
+}
+
+/*****************************************************************
+ * Clearfix
+ *****************************************************************/
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: block;
+}
+.clearfix::after {
+  clear: both;
+}
+
+/*****************************************************************
+ * CSS Animation FadeIn
+ *****************************************************************/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

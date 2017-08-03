@@ -1,0 +1,19 @@
+/*****************************************************************
+ * header
+ *****************************************************************/
+
+#header {
+	background-color: $grey4;
+	text-align: center;
+	height: px(100);
+	padding: px(20) 0 0;
+
+		p {
+			font-size: px(14);
+			line-height: px(18);
+		}
+
+		strong {
+			font-weight: bold;
+		}
+}

@@ -1,0 +1,137 @@
+/*****************************************************************
+ * Form
+ *****************************************************************/
+
+label {
+	display: inline-block;
+	font-family: $font-2;
+	font-weight: normal;
+	font-size: px(12);
+	line-height: px(16);
+	letter-spacing: px(0.25);
+	color: $grey2;
+	margin: 0 0 px(5);
+}
+
+input {
+
+		&[type="text"],
+		&[type="email"],
+		&[type="number"],
+		&[type="search"],
+		&[type="email"],
+		&[type="password"] {
+			border: px(1) solid $grey4;
+			border-radius: px(3);
+			outline: none;
+			resize: none;
+			font-family: $font-1;
+			font-weight: 300;
+			font-size: px(14);
+			line-height: px(18);
+			letter-spacing: px(0.2);
+			color: $dark;
+			width: 100%;
+			height: px(35);
+			padding: px(4) px(10) px(5);
+			box-shadow: 0 0 0 px(2) transparent;
+			-webkit-appearance: none;
+			@include transition(all 200ms ease);
+
+				&:hover,
+				&:focus {
+					border-color: transparent;
+					box-shadow: 0 0 0 px(2) $grey3;
+				}
+
+				&.invalid {
+					border-color: $red1;
+
+						&:hover,
+						&:focus {
+							border-color: transparent;
+							box-shadow: 0 0 0 px(2) $red1;
+						}
+				}
+
+				&:disabled {
+					border-color: $grey4;
+					box-shadow: 0 0 0 px(2) transparent;
+				}
+		}
+
+		&[type="number"] {
+
+				&[type=number]::-webkit-inner-spin-button,
+				&[type=number]::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+		}
+}
+
+textarea {
+	border: px(1) solid $grey4;
+	border-radius: px(3);
+	outline: none;
+	resize: none;
+	font-family: $font-1;
+	font-weight: 300;
+	font-size: px(13);
+	line-height: px(16);
+	letter-spacing: px(0.2);
+	color: $dark;
+	width: 100%;
+	min-height: px(60);
+	padding: px(5) px(10);
+	box-shadow: 0 0 0 px(2) transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	@include transition(all 200ms ease);
+
+	@include media(screen,max,667px) {
+		font-size: px(16);
+		line-height: px(24);
+	}
+
+		&:hover,
+		&:focus {
+			border-color: transparent;
+			box-shadow: 0 0 0 px(2) $grey3;
+		}
+
+		&:disabled {
+			border-color: $grey4;
+			box-shadow: 0 0 0 px(2) transparent;
+		}
+}
+
+select {
+	border: px(1) solid $grey4;
+	background-color: $light;
+	border-radius: px(3);
+	outline: none;
+	font-family: $font-1;
+	font-weight: 300;
+	font-size: px(14);
+	letter-spacing: px(0.2);
+	color: $dark;
+	width: 100%;
+	height: px(35);
+	padding: px(1) px(10) 0;
+	box-shadow: 0 0 0 px(2) transparent;
+	-webkit-appearance:none;
+	cursor: pointer;
+	@include transition(all 200ms ease);
+
+		&:hover,
+		&:focus {
+			border-color: transparent;
+			box-shadow: 0 0 0 px(2) $grey3;
+		}
+
+		&:disabled {
+			border-color: $grey4;
+			box-shadow: 0 0 0 px(2) transparent;
+		}
+}
