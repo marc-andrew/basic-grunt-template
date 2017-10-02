@@ -5,6 +5,13 @@ This is the Grunt Template. Copy this template and to start a new project.
 You will need Grunt and SASS. See install instruction below.
 
 
+### Get node modules
+
+```
+npm install
+```
+
+
 ### JSON information
 
 You will need for each SWIG file a JSON file with the same file name.
